@@ -1,0 +1,39 @@
+ext {
+    //android开发版本配置
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.2",
+            applicationId    : "com.lwang.smilecomponent",
+            minSdkVersion    : 16,
+            targetSdkVersion : 28,
+            versionCode      : 1,
+            versionName      : "1.0",
+    ]
+
+
+    //version配置
+    versions = [
+            "constraintlayout-version": "2.0.4",
+            "appcompat-version": "1.2.0",
+            "junit-version"  : "4.12",
+    ]
+
+
+    //androidx配置
+    androidx = [
+            'constraintlayout'        : "androidx.constraintlayout:constraintlayout:${versions["constraintlayout-version"]}",
+            'appcompat'               : "androidx.appcompat:appcompat:${versions["appcompat-version"]}",
+            'junit'                   : "junit:junit:${versions["junit-version"]}",
+    ]
+
+
+    //依赖第三方配置
+    dependencies = [
+            //MVVMHabit
+            "MVVMHabit"                            : "com.github.goldze:MVVMHabit:3.1.0",
+            //阿里路由框架
+            "arouter-api"                          : "com.alibaba:arouter-api:1.4.1",
+            "arouter-compiler"                     : "com.alibaba:arouter-compiler:1.2.2",
+    ]
+
+}
