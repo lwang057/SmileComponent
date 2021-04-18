@@ -1,4 +1,4 @@
-package com.lwang.smilecomponent;
+package com.lwang.core.debug;
 
 import com.lwang.core.config.ModuleLifecycleConfig;
 
@@ -6,10 +6,10 @@ import me.goldze.mvvmhabit.base.BaseApplication;
 
 /**
  * @Author lwang
- * @Date 2021/4/16 15:06
- * @Description
+ * @Date 2021/4/17 09:18
+ * @Description debug包下的代码不参与编译，仅作为独立模块运行时初始化数据
  */
-public class AppApplication extends BaseApplication {
+public class DebugApplication extends BaseApplication {
 
     @Override
     public void onCreate() {
@@ -22,5 +22,6 @@ public class AppApplication extends BaseApplication {
         //初始化组件(靠后)
         ModuleLifecycleConfig.getInstance().initModuleLow(this);
     }
+
 
 }
