@@ -1,0 +1,4 @@
+<resources>
+    <string name="user_name">module-user</string>
+    <string name="user_info">用户：</string>
+</resources>
