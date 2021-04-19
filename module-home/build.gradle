@@ -1,0 +1,27 @@
+apply from: "../module.build.gradle"
+
+android {
+    defaultConfig {
+        //如果是独立模块，则使用当前组件的包名
+        if (isBuildModule.toBoolean()) {
+            applicationId "com.lwang.home"
+        }
+    }
+
+    //统一资源前缀，规范资源引用
+    resourcePrefix "home_"
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    //组件依赖基础库
+    api project(':library-core')
+
+    //组件中依赖阿里路由编译框架
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+
+    //顶部导航TabLayout(这里要用api依赖, 不能用implementation，不然当宿主打包的时候自动生成的dataBinding无法编译该库的类（targetSdkVersion=28以后就不能加入design了，Md风格的控件也已经移入到material库）
+    api "com.google.android.material:material:1.0.0"
+
+}
