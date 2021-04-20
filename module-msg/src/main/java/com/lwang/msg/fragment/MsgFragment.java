@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.lwang.core.router.RouterFragmentPath;
 import com.lwang.msg.BR;
 import com.lwang.msg.R;
 import com.lwang.msg.databinding.MsgFragmentMsgBinding;
@@ -18,6 +20,7 @@ import me.goldze.mvvmhabit.base.BaseFragment;
  * @Date 2021/4/19 22:17
  * @Description
  */
+@Route(path = RouterFragmentPath.Msg.PAGER_MSG)
 public class MsgFragment extends BaseFragment<MsgFragmentMsgBinding, MsgViewModel> {
 
 

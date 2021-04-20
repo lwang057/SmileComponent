@@ -13,18 +13,19 @@ public class ModuleLifecycleReflex {
 
     //主业务模块
     private static final String MainInit = "com.lwang.main.MainModuleInit";
-    //登录验证模块
-    private static final String SignInit = "com.lwang.sign.SignModuleInit";
     //首页业务模块
     private static final String HomeInit = "com.lwang.home.HomeModuleInit";
     //工作业务模块
     private static final String WorkInit = "com.lwang.work.WorkModuleInit";
     //消息业务模块
     private static final String MsgInit = "com.lwang.msg.MsgModuleInit";
-    //用户业务模块
+    //我的业务模块
     private static final String UserInit = "com.lwang.user.UserModuleInit";
+    //登录验证模块
+    private static final String LoginInit = "com.lwang.login.LoginModuleInit";
 
-    public static String[] initModuleNames = {BaseInit};
+
+    public static String[] initModuleNames = {BaseInit, MainInit, HomeInit, WorkInit, MsgInit, UserInit, LoginInit};
 
 
 }

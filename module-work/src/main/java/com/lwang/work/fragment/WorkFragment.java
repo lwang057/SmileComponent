@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.lwang.core.router.RouterFragmentPath;
 import com.lwang.work.BR;
 import com.lwang.work.R;
 import com.lwang.work.databinding.WorkFragmentWorkBinding;
@@ -18,6 +20,7 @@ import me.goldze.mvvmhabit.base.BaseFragment;
  * @Date 2021/4/19 21:51
  * @Description
  */
+@Route(path = RouterFragmentPath.Work.PAGER_WORK)
 public class WorkFragment extends BaseFragment<WorkFragmentWorkBinding, WorkViewModel> {
 
 

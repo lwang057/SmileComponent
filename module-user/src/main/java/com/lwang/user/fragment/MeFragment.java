@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.lwang.core.router.RouterFragmentPath;
 import com.lwang.user.BR;
 import com.lwang.user.R;
 import com.lwang.user.databinding.UserFragmentMeBinding;
@@ -18,6 +20,7 @@ import me.goldze.mvvmhabit.base.BaseFragment;
  * @Date 2021/4/19 22:31
  * @Description
  */
+@Route(path = RouterFragmentPath.User.PAGER_ME)
 public class MeFragment extends BaseFragment<UserFragmentMeBinding, MeViewModel> {
 
 

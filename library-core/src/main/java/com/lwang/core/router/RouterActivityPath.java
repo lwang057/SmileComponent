@@ -19,10 +19,10 @@ public class RouterActivityPath {
     /**
      * 身份验证组件
      */
-    public static class Sign {
-        private static final String SIGN = "/sign";
+    public static class Login {
+        private static final String LOGIN = "/login";
         /*登录界面*/
-        public static final String PAGER_LOGIN = SIGN + "/Login";
+        public static final String PAGER_LOGIN = LOGIN + "/Login";
     }
 
 
@@ -32,6 +32,6 @@ public class RouterActivityPath {
     public static class User {
         private static final String USER = "/user";
         /*用户详情*/
-        public static final String PAGER_USERDETAIL = USER + "/UserDetail";
+        public static final String PAGER_USER_DETAIL = USER + "/UserDetail";
     }
 }

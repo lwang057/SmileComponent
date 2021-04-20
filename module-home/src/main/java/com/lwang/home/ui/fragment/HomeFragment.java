@@ -10,7 +10,9 @@ import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.Observer;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.google.android.material.tabs.TabLayout;
+import com.lwang.core.router.RouterFragmentPath;
 import com.lwang.home.BR;
 import com.lwang.home.R;
 import com.lwang.home.databinding.HomeFragmentHomeBinding;
@@ -25,6 +27,7 @@ import me.goldze.mvvmhabit.utils.ToastUtils;
  * @Date 2021/4/19 09:52
  * @Description
  */
+@Route(path = RouterFragmentPath.Home.PAGER_HOME)
 public class HomeFragment extends BaseFragment<HomeFragmentHomeBinding, HomeViewModel> {
 
 

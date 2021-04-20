@@ -12,6 +12,7 @@ android {
         versionName rootProject.ext.android.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
 
         //阿里路由框架配置
         javaCompileOptions {

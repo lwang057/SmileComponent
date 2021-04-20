@@ -9,7 +9,7 @@ android {
     }
 
     //统一资源前缀，规范资源引用
-    resourcePrefix "app_"
+    resourcePrefix "main_"
 }
 
 dependencies {
@@ -20,5 +20,8 @@ dependencies {
 
     //组件中依赖阿里路由编译框架
     annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+
+    //第三方底部TabBar(这里要用api依赖, 不能用implementation，不然当宿主打包的时候自动生成的dataBinding无法编译该库的类
+    api 'me.majiajie:pager-bottom-tab-strip:2.2.2'
 
 }
